@@ -1,0 +1,46 @@
+﻿Creating Class Files, Creating Cohesive and Code Navigation 
+===========================================================
+Prefer more classes w/  narrowly defined responsibilities
+Prefer to put each class in its own file
+Prefer high cohesion - similarity / singleness of purpose of the class members
+To achieve high cohesion, a rule of thumb: try to make your classes fit on one "screen" of your IDE (no scrolling required)
+
+
+
+Understanding Object References and Object Lifetime
+===================================================
+An object reference variable holds a reference to an instantied object in the computer's memory.
+
+	MyClass myObject;
+
+The new Keyword creates an instance of the class and returns the address of the object in memory to the reference variable.
+
+	myObject = new MyClass();
+
+More than one object reference variable can hold an address to the object in memory.
+
+	MyClass myOtherObjectReference = myObject;
+
+Each time a new reference is added, the reference count increases by one. Each time an object reference variable goes out of scope 
+or is set to null, the reference count decreases by one.
+
+If the reference count is zero, the .NET Framework Runtime's Garbage Collector removes the object from memory at an indeterminate point
+in time in the future. You can take control of the finalization process and even handle events just before the object is removed.
+See: "deterministic finalization".
+
+
+
+Understanding the .NET Framework and Compilation
+================================================
+The .NET Framework consists of:
+
+- Runtime (Common Language Runtime, CLR) "protective bubble", manages memory, protects the user's machine etc.
+- .NET Framework Class Library (FCL, Base Class Library, BCL) - thousands of classes built by Microsoft for every imaginable purpose.
+- Compilers (C# complier, VB compiler) turns your human readable source code into Microsoft Intermediate Language(MSIL, IL) and packaged into a .NET assembly
+(.exe - executable, or .dll - class library)
+
+- Many other tools and features
+Initial compilation to Intermediate Language, then a second compilation 
+JIT - Just In Time compilation - an optimized version of the assembly for the specific hardware and software. Happens at the first request on that computer.
+
+

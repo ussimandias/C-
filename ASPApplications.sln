@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPApplications", "ASPApplications\ASPApplications.csproj", "{11C68A4C-4AA9-479E-88B9-5292D95CD919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroMonster", "HeroMonster\HeroMonster.csproj", "{2242F224-6247-4463-9746-D0EE034DC99E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows-CS-ASP_41", "Windows-CS-ASP_41\Windows-CS-ASP_41.csproj", "{8D6E6CE8-8315-42D1-9309-53A5F4D13AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeApp", "SomeApp\SomeApp.csproj", "{F2AEFA6E-4147-4A49-BEB7-2C280224D56A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegiTestProject1", "LegiTestProject1\LegiTestProject1.csproj", "{1072779F-75AC-49D7-8A72-AA97E3ABCEC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06877570-7405-41E3-8851-EF74388F7A20}"
+	ProjectSection(SolutionItems) = preProject
+		WE-Palette.css = WE-Palette.css
+		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C68A4C-4AA9-479E-88B9-5292D95CD919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C68A4C-4AA9-479E-88B9-5292D95CD919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C68A4C-4AA9-479E-88B9-5292D95CD919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C68A4C-4AA9-479E-88B9-5292D95CD919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2242F224-6247-4463-9746-D0EE034DC99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2242F224-6247-4463-9746-D0EE034DC99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2242F224-6247-4463-9746-D0EE034DC99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2242F224-6247-4463-9746-D0EE034DC99E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6E6CE8-8315-42D1-9309-53A5F4D13AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6E6CE8-8315-42D1-9309-53A5F4D13AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6E6CE8-8315-42D1-9309-53A5F4D13AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6E6CE8-8315-42D1-9309-53A5F4D13AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2AEFA6E-4147-4A49-BEB7-2C280224D56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AEFA6E-4147-4A49-BEB7-2C280224D56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2AEFA6E-4147-4A49-BEB7-2C280224D56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2AEFA6E-4147-4A49-BEB7-2C280224D56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1072779F-75AC-49D7-8A72-AA97E3ABCEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1072779F-75AC-49D7-8A72-AA97E3ABCEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1072779F-75AC-49D7-8A72-AA97E3ABCEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1072779F-75AC-49D7-8A72-AA97E3ABCEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

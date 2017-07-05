@@ -1,0 +1,68 @@
+﻿Nammespaces disambiguate class names inside of class libraries or applications.
+
+You must reference class names by their full name:
+
+	System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+...or, you can employ a using directive at the top of the code fileto instruct the compiler to look in those namespaces
+to find the class that is referenced.
+
+	using System.Text;
+	...
+	StringBuilder sb = new StringBuilder();
+
+you must always do 1 of these 2 things if the code you're writting is outside of the namespace of the class you want to use,
+even if it's in the same project.
+
+Default namespace is defined in Project Properties(right-clicking on Project name in Solution Explorer, select Properties...)
+
+Creating  Class Libraries and Adding Reference to Asemblies
+***********************************************************
+Class Library project - create a .dll that can be referenced in other projects.
+
+Add a Reference - the FCL is split into tiny pieces, and you must reference  the assemblies that contain the parts of the library you want to use
+
+Right-Click on the projects references node in the Solution Explorer, select Add refernce.
+
+Accessibility Modifiers, Fields and Properties
+**********************************************
+http://v.gd/acces
+
+Public - Class or member can be accessed by any code
+Private - Class or member can only be accessed by parent class
+Protected - Class or member can only be accessed by parent class or derived class
+Internal - Class or member can only be accessed by code inside the same assembly
+
+Classes are internal by default
+Methods and Properties are private by default
+
+Encapsulation - hiding implementation details behind public interfaces, reduces coupling increases plug-ability/ reuseability, 
+maintainability, etc.
+
+private fields have two properties:
+(1) reference to object or variable that used for internal implementation o fclass
+(2) hold the state of an object, backing field for public property
+
+	propfull [tab][tab]
+
+	private int myField;
+	property int myProperty
+	{
+		get {return myField}
+		set{
+			if value > 100
+				myField  = value
+			else
+				//tell the caller that they can't do this; 
+		}
+	}
+
+Full property definition and private fields to control access to private fields/state of the object.
+
+	propg [tab][tab]
+	public int MyPropetry {get; private set;}
+
+Restricts setting of property to just the class's internal implementation.
+
+
+

@@ -1,0 +1,55 @@
+﻿ Class is a code block that defines a data type.
+ ************************************************
+	 * An Object is an instance of a Class.
+	 * Metaphors:
+	 * Blueprint vs. Houses
+	 * Recipe vs. Cupcakes
+	 * Pattern vs. Bluejeans
+	 * Cookie cutter vs. Cookies
+	 * 
+	 * Classes have members, like Properties and Methods.
+	 * 
+	 * Properties define the attributes that are set on 
+	 * an instance of the class / they represent the "state" 
+	 * of the object at a moment in time inside a application.
+	 * you can SET (assign) an GET (retrieve) property values
+	 *  on an object.
+	 *  
+	 *  Methods define actions an instance of a class
+	 *  can perform, usually on the object instance itself.
+	 *  
+	 *  You can create an instance of a class using the new keyword:
+	 *  Think: 'factory'.
+	 *  
+	 *  You can access the members of an object by using
+	 *  the member access operator, the dot (.)
+	 *  
+	 *  Conceptually classes are delegated a responsibily
+	 *  in the system or represent some domain concept
+	 *  in the system.
+	 *  
+	 *  Classes are ultimately custom data types, more complex 
+	 *  than the simple data types.
+	 *  Therefore you can use them anywhere you use other
+	 *  data types (like as input parameters or return
+	 *  values from a method.)
+	 *  
+		Class Car{
+	 
+				}
+
+	 Auto Implemented Properties - simple properties
+	 prop[tab][tab][enter][enter]
+
+	 *  this keyword - Access a member of the 
+	 *  current instance of the class.
+
+		public void MyMethod()
+		{
+			this.Year = 1977;
+		}
+
+	 
+
+	
+	 

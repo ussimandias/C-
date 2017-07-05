@@ -1,0 +1,129 @@
+﻿Working with the List Collection
+================================
+Use Generic collections to work with items in a strongly typed fashion.
+
+			Better than Arrays:
+			-------------------
+Know the type of the item for a certainty, no casting / no converting
+Better performance inserting / removing / updating
+Collections provide more flexible options to access items in the collection
+Allows for LINQ extention methods
+
+Many different collection - specialities
+=========================================
+"Generic Collections"
+List<T>
+Dictionary<TKey, Tvalue>
+T => data type you need
+"You make a generic specific by providing a data type."
+
+List<string> - only store strings (strongly typed)
+List<Car> - only store Cars in that collection
+
+//Assume i have three objects: car1, car2, car3
+	List<Car> cars = new List<Car>()
+	cars.Add(car1)
+	cars.Add(car2)
+	cars.Add(car3)
+
+	int numberOfCars = cars.Count;
+	Car myCar = cars.Element(1); // Returns 2nd car in the collection
+
+//Terminology: You access a MEMBER of a collection
+
+// LINQ queries
+
+Oject Initializers
+===================
+Concise way to iniialize a new object (or collection) with values.
+
+	Car car1 = new Car(){ Make = "Mazda", Model = "Mazda3", Year = 2016, Color = "Red" + "</br>" };
+
+//No local variable name for the new Car instance needed!
+	Car.Add(new Car(){ Make = "Mazda", Model = "Mazda3", Year = 2016, Color = "Red" + "</br>" });
+
+Collection Initializers
+========================
+Shortcut to create a new instance of a  generic collection AND initialize it by IMMEDIATELY adding
+new instances of a given type
+
+	List <Car > cars = new List<Car>()
+			{
+			new Domain.Car { Make = "Mazda", Model = "Mazda3", Year = 2016, Color = "Red" + "</br>" },
+			new Domain.Car { Make = "BMW", Model = "745i", Year = 2017, Color = "White" + "</br>" },
+			new Domain.Car { Make = "VW", Model = "Jetta", Year = 2013, Color = "Red" + "</br>" },
+			new Domain.Car { Make = "Mazda", Model = "Mazda5", Year = 2015, Color = "Blue" }
+			};
+
+Working with the Dictionary<TKey, TValue> Collection
+====================================================
+Dictionary allows you to use a key to access a number of the collection. 
+Think: Webster's dictionary ... the word (key), then the definition (instance of a given type)
+Key is anything meaningful in YOUR system.
+Key must be unique.
+
+TKey => type of the Key
+TValue => type of the value
+
+	  Dictionary<string, Car> cars = new Dictionary<string, Car>(){
+				{ "V1", new Domain.Car { Make = "Mazda", Model = "Mazda3", Year = 2016, Color = "Red" + "</br>" } },
+				{ "V2", new Domain.Car { Make = "BMW", Model = "745i", Year = 2017, Color = "White" + "</br>" } },
+				{ "V3", new Domain.Car { Make = "VW", Model = "Jetta", Year = 2013, Color = "Red" + "</br>" } }
+				};
+
+				cars.ElementAt(1).Key // Returns "V2"
+				cars.ElementAt(1).Value // Returns the car object in the 2nd position of the collection
+
+//Better way to access Dictionary ...
+	Car v2
+	Car v2;
+	if (cars.TryGetValue("V2",out v2))
+		result += v2.FormatDetailsForDisplay();
+
+//Remove 
+	if (cars.Remove("V1"))
+			{
+				result += "Successfully removed car <br/>";
+			}
+
+Looping with the foreach Iteraton Statement
+============================================
+More elegant way of iterating through collections.
+
+Code snippet: foreach [tab][tab]
+	 
+	 foreach (Car car in cars)
+	 {
+		result += car.Make;
+	 }
+
+Implicitly Typed Local Variables with the var Keyword
+=====================================================
+(Applies to locally scoped variable declarations)
+Compilier is smart enough to figure out the data type when you intialize the variable.
+Becomes increasingly important because sometimes its difficult to know what the data
+type is supposed to be. (LINQ)
+
+	int hitPoints = 0;
+	... is equivalent of ...
+	var hitPoints = 0;
+
+	string heroName = "Zeus";
+	... is equivalent of ...
+	var heroName = "Zeus"
+
+	var cars = new List<Car>()
+	{
+		...
+	}
+
+	Rules:
+	1. Must initialize the variable.
+	2. Variable is permanently set to the implicit date type.
+	3. Can't be used for a Public / variable
+
+
+
+		   
+
+	

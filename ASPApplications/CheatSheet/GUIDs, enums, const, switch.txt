@@ -1,0 +1,60 @@
+﻿Creating GUIDs
+==============
+Globally Unique Identifier
+
+	System.Guid = new System.Guid.NewGuid();
+
+Working with Enumerations
+=========================
+A data type accepting only enumerated values that you define.
+Strongly typed, ridding your app of "magic strings"
+
+	public enum Ocuppation{
+		Doctor,
+		Lawyer,
+		IndianChief
+	}
+
+	Occupation whatIDo = Occupation.IndianChief();
+
+	Occupation occupation;
+	if(Enum.TryParse("Doctor", out occupation )){
+		.....
+	}
+
+Creating Constants with the const Keyword
+=========================================
+Remove magic values (strings, integers, etc.) using 
+permanent, immutable identifiers.
+Only use for things that NEVER change - not for product prices, etc.
+Define const at local or field.
+
+	const double valueOfPi = 3.14;
+
+Understanding switch Statement
+==============================
+Think: train switch ... logic based on evaluation of variable or property 
+value.
+
+	switch(whatIDo){
+		case Occupation.Doctor
+			...
+			break;
+
+		case Occupation.Lawyer
+			...
+			break;
+		
+		case Occupation.MedicineMan
+		case Occupation.Dentist
+			...
+			goto case  Occupation.Doctor;
+		
+		default:
+			...
+			break;
+
+	}
+
+
+

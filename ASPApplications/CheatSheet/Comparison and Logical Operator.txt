@@ -1,0 +1,17 @@
+﻿Comparison and Logical Operators
+=================================
+Comparison Operators 
+Used for conditional statements
+	==
+	!=
+	< >
+	<= >=
+	!someBooleanValue - means it is testing for some value that is NOT true.
+
+Logical Operators
+=================
+used to combine multiple expressions / evaluation
+	&& - AND
+	|| - OR
+
+Combine with parenthesis () for order of precedence

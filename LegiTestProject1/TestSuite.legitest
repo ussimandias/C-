@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSuite name="TestSuite" targetFramework="NUnit">
+  <Assets>
+    <TestAssetCollection>
+      <TestAssets />
+    </TestAssetCollection>
+  </Assets>
+  <TestGroups>
+    <TestGroup name="Test Group 1" conditionFlag="">
+      <GroupInitializationSteps />
+      <TestInitializationSteps />
+      <Tests>
+        <TestSuite name="Test 1" conditionFlag="">
+          <InitializationSteps />
+          <ExecutionTracks>
+            <TestGroup name="Track 1">
+              <Steps />
+            </TestGroup>
+          </ExecutionTracks>
+          <Assertions />
+          <TeardownSteps />
+        </TestSuite>
+      </Tests>
+      <TestTeardownSteps />
+      <GroupTeardownSteps />
+    </TestGroup>
+  </TestGroups>
+</TestSuite>

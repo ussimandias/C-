@@ -1,0 +1,22 @@
+﻿Working with Spans of Time
+==========================
+Create and intialize new TimeSpans
+
+	//Days.Hours:Minutes:Seconds:Millieseconds
+	TimeSpan myTimeSpan = TimeSpan.Parse("1.2:30:5");
+
+	DateTime myBirthday = DateTime.Parse("12/12/2004");
+	TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+
+more info at http://is.gd/timespan
+
+Get Individual parts
+	myAge.Hours;
+	myAge.Seconds;
+
+... or get TOTAL elasped time as a double representing both the 
+number of days / hours / etc.
+AND fractional values representing 'left overs'.
+
+	myTimeSpan.TotalDays // double
+	myTimeSpan.TotalHours // double

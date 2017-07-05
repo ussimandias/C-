@@ -1,0 +1,31 @@
+﻿Contitional if ... else if ... else Statement
+=============================================
+	= Assignment
+	== Equality
+
+	if(a == b)
+	{
+		//execute when the expression is true
+	}
+	else
+	{
+		//execute when the expression is false
+	}
+
+... or ... evaluate other mutually exclusively options:
+	if(a == b){// some code}
+	else if(a == c){// some code}
+	else if(a == d){// some code}
+	else{// catch all}
+
+	CheckBox Server Control = Checked prop is bool
+
+	RadioButton Server Control = GroupName prop groups
+	them together, check prop is bool
+
+
+Conditonal Ternary Operator
+===========================
+Short cut for evaluating an expression and returning a result.
+	
+	result = (a == b) ? "Equal" : "Not Equal";

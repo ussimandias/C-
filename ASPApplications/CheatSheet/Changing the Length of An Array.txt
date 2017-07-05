@@ -1,0 +1,23 @@
+﻿Changine the Length of an Array
+================================
+
+Arrays are Immutable - cannot be changed in memory.
+However .NET Famework provides helper methods to 
+resize an array... creates a new array and copies 
+the old values into it.
+
+	Array.Resize(ref myArray, myArray.Length + 1);
+
+//Get the highest index:
+	int highestIndex = myArray.GetUpperBound(0);
+//0 = dimension we want to retrieve the upper boundary for
+
+Arrays have other helper methods
+=================================
+
+	myArray.Sum()
+    myArray.Max()
+    myArray.Min()
+    myArray.Average()
+    myArray.Sort()
+    myArray.Reverse()

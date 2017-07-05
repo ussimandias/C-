@@ -1,0 +1,24 @@
+﻿Arithmetic Operators (CS-ASP_009)
+=================================
+	= NOT equality, it's assignment
+
+Math Operators: + - * /
+
+Addition Assignment
+	total = total + 5;
+	total += 5;
+
+Increment Operator: i++;
+Decrement Operator: i--;
+
+Beware of order of precedence (use parenthesis)
+Beware of down casting (you'll lose precision)
+Beware of overflow (use bigger types)
+
+To make overflow throw an exception:
+
+	checked
+	{
+	// some arithmetic operation
+	// that could potentially overflow
+	}

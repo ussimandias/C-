@@ -1,0 +1,53 @@
+﻿Creating overloaded methods
+****************************
+Different method signature but same basic function.
+METHOD SIGNATURE ... the number and types of parameters
+Can have different return types.
+		 
+Creating Optional Parameters
+*************************** 
+Optonal parameters provide default values when you define
+the method. so if you don't supply a value, the default 
+will be used
+		 
+	private void myMethod(string myRequiredParam, int myOptionalParam -1, int myOtherOptionalParam = 5); 
+		  
+Can be called ...
+
+	myMethod("Hello Required Param!");
+		 
+or ...
+		 
+	myMethod("Hello Required Param!", 100);
+		 
+or
+
+	myMethod("Hello Required Param!", 100, 500);
+		 
+you cannot skip an optional parameter:
+		 
+	myMethod("Hello Required Param!", , 500); -- ERROR!!
+		  
+		 
+Passing Named arguments into input Parameters
+**********************************************
+Allows us to send in parameter arguments OUT OF ORDER!
+We  just prefix the the input parameter argument with the name
+of the parameter we're passing in, a colon, then the value:
+		  
+	myMethod(myOtherOptionalParam: 500, myRequiredParam: "Hello Required Param", myOptionalParam: 100);
+		  
+you still have to pass in REQUIRED param
+		  
+			
+Creating Methods with Output Parameters
+****************************************
+Allow you to return a value the normal way AND
+return a value via a method parameter:
+
+	private bool myMethod(string myRequiredParam, out int myOptionalParam){}
+	
+	int myValue = 0;
+	if(myMethod("some required text", out value))
+	return "Hello World";
+		 

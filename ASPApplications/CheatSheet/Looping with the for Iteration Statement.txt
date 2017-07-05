@@ -1,0 +1,37 @@
+﻿Looping with the for Iteration Statement
+========================================
+
+Snipper: for[tab][tab]
+then you can tab through the replaceable bits, hit enter to start writing
+code in the code block body.
+
+	for (int i = 0; i > 0; i++)
+	{
+		//Your code here;
+	}
+
+i - Any variable name
+
+1st part - counter declaration, can be initialized to any number
+2nd part - condition, can be any expression that equates to a bool
+3rd part - increment i++ / decrement i--, canstep more than 1 using += 
+
+	string[] names = new string[] { "Professor X", "Iceman", "Angel", "Beast", "Phoenix", "Cyclops", "Wolverine", "Storm", "Toad", "Sabre Tooth"};
+
+	  for (int i = 0; i < names.Length; i++)
+            {
+                // Can search for specific value
+                if (numbers[i] == "Professor X" )
+                {
+                    // Do something here
+					// Can break out of additional iteration if you need to
+					break;
+                }
+
+                // is this the smallest count so far
+                if (numbers[i] < numbers[smallestNumberIndex])
+                {
+                    smallestNumberIndex = i;
+                }
+          
+            }

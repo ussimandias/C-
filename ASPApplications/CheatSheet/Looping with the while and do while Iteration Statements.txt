@@ -1,0 +1,19 @@
+﻿Looping with the while and do ... while Iteration Statements
+============================================================
+
+	Random random = new Random();
+	//random.Next(lowerBounds, upperBounds)
+	random.Next(1, 100); // returns a value between 1 and 100
+
+	//If someExpression is already false, this will never execute
+	while(someExpression){
+		//Code that would affect whether
+		//someExpress is true or false
+	}
+
+	//If some expression is already false, this will run atleast once
+	do {
+		// Code that
+	}
+	while(someExpression)
+

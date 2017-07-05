@@ -1,0 +1,36 @@
+﻿Single Dimensional Arrays
+=========================
+Indexes vs.Elements
+Accessor vs. Stored Values
+Indexes are zero based
+
+Declaring Arrays
+================
+
+	string[] myArray = new string[3]
+	 
+Initialization on Declaration:
+==============================
+	string[] myString = new string[5] { "a", "b", "c", "d", "e" };
+	 
+Setting / Getting Values
+========================
+
+	sting[] myString = myArray[1] // Retrieves the second element
+	myArray[0] = myString; //Sets first element
+
+Multi-Dimensional Arrays
+========================
+Same as single Dimensional ... just requires more indexes (in dimensions)
+to get the element
+
+	double[,] myArray = new double[2,3]; //contains 6 elements
+	int[,,] rubicsCube = new int[3,3,3]; //contains 27 elements 
+
+	rubicsCube[0,1,2] = 42;
+	myInteger = rubicsCube[0,1,2];
+
+
+Arrays are Immutable -cannot be changed in memory.
+However.NET Famework provides helper methods to resize an array... creates a new array and copies
+the old values into it.
